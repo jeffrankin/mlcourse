@@ -19,7 +19,7 @@ for iter = 1:num_iters
 
     %disp(theta)
     %theta = theta - (alpha) * ( 1 / m) * sum(((X * theta) - y) .* X)
-    theta = theta - (alpha) * (1 / m) * X' * (X * theta - y)
+    theta = theta - (alpha) * (1 / m) * X' * (X * theta - y);
 
     %computeCost(X, y, theta)
     % ============================================================
